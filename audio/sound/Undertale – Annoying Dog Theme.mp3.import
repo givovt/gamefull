@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3pt5pd3ko7s8"
+path="res://.godot/imported/Undertale – Annoying Dog Theme.mp3-4e35ab568edf1f701ea16d230c75cb7e.mp3str"
+
+[deps]
+
+source_file="res://audio/sound/Undertale – Annoying Dog Theme.mp3"
+dest_files=["res://.godot/imported/Undertale – Annoying Dog Theme.mp3-4e35ab568edf1f701ea16d230c75cb7e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

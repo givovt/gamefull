@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://pn1qmq8r3lmp"]
+
+[ext_resource type="Script" path="res://shop.gd" id="1_gtgaf"]
+[ext_resource type="Texture2D" uid="uid://d3h1o52y4vpn" path="res://Tiny Swords (Update 010)/Factions/Knights/Buildings/House/House_Construction.png" id="1_t26g5"]
+[ext_resource type="PackedScene" uid="uid://cy03bgfakvyvh" path="res://healing.tscn" id="3_r5igb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ar037"]
+font_size = 30
+shadow_size = 0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vmtkl"]
+size = Vector2(84, 73)
+
+[node name="shop" type="StaticBody2D"]
+script = ExtResource("1_gtgaf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_t26g5")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = -27.0
+offset_top = -52.0
+offset_right = 27.0
+offset_bottom = -21.0
+text = "shop
+"
+label_settings = SubResource("LabelSettings_ar037")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 33.5)
+shape = SubResource("RectangleShape2D_vmtkl")
+
+[node name="healing" parent="." instance=ExtResource("3_r5igb")]
+position = Vector2(-4, 74)

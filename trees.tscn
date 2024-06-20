@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsi8rhqvtdd8a"]
+
+[ext_resource type="Texture2D" uid="uid://dlh38ncmbt1to" path="res://Tiny Swords (Update 010)/Resources/Trees/Tree.png" id="1_olhrb"]
+
+[node name="trees" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(416, 288)
+texture = ExtResource("1_olhrb")

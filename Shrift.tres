@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bror8cwlp1yi1"]
+
+[ext_resource type="FontFile" uid="uid://dtpw6i0qypf86" path="res://theme_font/Jersey25-Regular.ttf" id="1_uo8sd"]
+
+[resource]
+font = ExtResource("1_uo8sd")
+font_size = 82
+outline_size = 17
+outline_color = Color(0.431115, 0.165467, 0.0582286, 1)
+shadow_size = 2112

@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsoj8bdetho0u"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_ypcsc"]
+[ext_resource type="Texture2D" uid="uid://cusrfyv8vrrv4" path="res://Tiny Swords (Update 010)/UI/PNG/GUI-Kit-Pack-Free_54.png" id="2_xettt"]
+[ext_resource type="Texture2D" uid="uid://b13q3g2wodick" path="res://Tiny Swords (Update 010)/UI/PNG/GUI-Kit-Pack-Free_23.png" id="3_cxgy1"]
+[ext_resource type="Texture2D" uid="uid://dhlhst6uln4ec" path="res://Tiny Swords (Update 010)/Resources/Resources/M_Idle_(NoShadow).png" id="4_mju2q"]
+[ext_resource type="Texture2D" uid="uid://d3ycu6koklifi" path="res://Tiny Swords (Update 010)/Factions/Knights/pinpng.com-pixel-png-375635.png" id="4_t5uph"]
+[ext_resource type="Texture2D" uid="uid://bluijgf35n0oc" path="res://Tiny Swords (Update 010)/Resources/Resources/G_Idle_(NoShadow).png" id="5_nrbwe"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ypcsc")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 10.0
+offset_right = 313.0
+offset_bottom = 41.0
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("2_xettt")
+texture_progress = ExtResource("3_cxgy1")
+
+[node name="healthtex" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(23, 26)
+scale = Vector2(0.00919907, 0.00931232)
+texture = ExtResource("4_t5uph")
+
+[node name="moneytex" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(23, 63)
+scale = Vector2(0.796876, 0.796876)
+texture = ExtResource("5_nrbwe")
+
+[node name="money_count" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 51.0
+offset_top = 64.0
+offset_right = 91.0
+offset_bottom = 81.0
+text = "0"
+
+[node name="health posions" type="Sprite2D" parent="."]
+position = Vector2(21, 104)
+scale = Vector2(0.828125, 0.828125)
+texture = ExtResource("4_mju2q")
+
+[node name="health_posion_count" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 51.0
+offset_top = 107.0
+offset_right = 91.0
+offset_bottom = 124.0
+text = "0"

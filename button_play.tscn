@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwc7sgkqn5ocg"]
+
+[ext_resource type="Texture2D" uid="uid://de23nph88yas3" path="res://Tiny Swords (Update 010)/UI/Buttons/Button_Disable_3Slides.png" id="1_yrbow"]
+[ext_resource type="Texture2D" uid="uid://dhc0wc012qi4c" path="res://Tiny Swords (Update 010)/UI/Buttons/Button_Red_3Slides.png" id="2_5lttr"]
+[ext_resource type="Script" path="res://button_play.gd" id="3_i0ve3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cdfvq"]
+font_size = 39
+font_color = Color(0.805733, 0.747092, 0.6447, 1)
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[node name="TextureButton" type="TextureButton"]
+offset_left = 421.0
+offset_top = 87.0
+offset_right = 613.0
+offset_bottom = 151.0
+texture_normal = ExtResource("1_yrbow")
+texture_hover = ExtResource("2_5lttr")
+texture_focused = ExtResource("2_5lttr")
+script = ExtResource("3_i0ve3")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 5.0
+offset_right = 135.0
+offset_bottom = 50.0
+text = "Play"
+label_settings = SubResource("LabelSettings_cdfvq")

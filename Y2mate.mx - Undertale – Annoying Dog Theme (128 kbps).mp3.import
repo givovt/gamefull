@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://osr2itjprbrn"
+path="res://.godot/imported/Y2mate.mx - Undertale – Annoying Dog Theme (128 kbps).mp3-3e9fce280b7cbac0dab3ffeb84ce3e2e.mp3str"
+
+[deps]
+
+source_file="res://Y2mate.mx - Undertale – Annoying Dog Theme (128 kbps).mp3"
+dest_files=["res://.godot/imported/Y2mate.mx - Undertale – Annoying Dog Theme (128 kbps).mp3-3e9fce280b7cbac0dab3ffeb84ce3e2e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

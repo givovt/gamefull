@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://c48bbw7hh3qwc"]
+
+[ext_resource type="Texture2D" uid="uid://kruhy4mm85ei" path="res://Tiny Swords (Update 010)/Resources/Sheep/HappySheep_Idle.png" id="1_5pmep"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfs1k"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_or431"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtdnw"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8w4qh"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdeyy"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qkayn"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npqoi"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftiuh"]
+atlas = ExtResource("1_5pmep")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hchgc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfs1k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_or431")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtdnw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8w4qh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdeyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qkayn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npqoi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ftiuh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m2f0j"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_hchgc")
+frame_progress = 0.638225
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_m2f0j")
